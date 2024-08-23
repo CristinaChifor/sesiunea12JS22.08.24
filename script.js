@@ -27,8 +27,23 @@ console.log("Hello!");
 
     if (!hasEaten) {
         console.log("Inca nu ai terminat de mancat.");
+    } 
+ }
+
+ /**if-else: Permite sa se execute un bloc de cod daca o conditie este adevarata 
+  * si alt bloc de cod daca aceeasi conditie este falsa.
+  */
+
+ if (!isChoreDone || !hasEaten) {
+    console.log("Te poti uita la desene animate");
+ } else {
+    if(!isChoreDone) {
+        console.log("Inca mai ai de lucru! Te poti uita la desene animate dupa ce ai terminat treaba.");
     }
-    
+
+    if (!hasEaten) {
+        console.log("Inca nu ai terminat de mancat.");
+    } 
  }
 
  
