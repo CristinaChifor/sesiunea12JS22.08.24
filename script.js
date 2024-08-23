@@ -91,8 +91,35 @@ switch (dayOfTheWeek) {
                 break;
 }
 
+/** 2. Loops
+ * Buclele sau instructiunile repetitive sunt structuri de control care permit executarea 
+ * repetitiva a unui bloc de cod. Acestea sunt folosite pentru a automatiza sarcini repetitive sau pentru a 
+ * parcurge iterativ valori din colectii de date (array, object, etc).
+ */
 
+/** While- Este o structura de control repetitiva ce permite executarea unui bloc de cod atat timp 
+ * cat o anumita conditie sau expresie este adevarata.
+ */
 
+const numbers = [2, 99, 34, 25, 1, -23];
+
+let smallestNumber = Number.MAX_SAFE_INTEGER;
+let currentIndex = 0;
+
+while (currentIndex < numbers.length) {
+    if (numbers[currentIndex] < smallestNumber) {
+        smallestNumber = numbers[currentIndex];
+    }
+
+    currentIndex++;
+}
+
+console.log(`Cel mai mic numar din lista este: `, smallestNumber);
+
+/** Do while- Este o structura de control repetitiva ce permite executarea 
+ * unui bloc de cod atat timp cat o anumita conditie sau expresie este adevarata. 
+ * Blocul de cod se executa cel putin odata indiferent de valoarea conditiei.
+ */
 
 
 
