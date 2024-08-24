@@ -149,9 +149,76 @@ for (let i = 0; i < numbers.length; i++) {
 
 console.log(`Cel mai mic numar din lista este: `, smallestNr);
 
+/** For of- Este o structura de control repetitiva ce permite executarea unui bloc de cod 
+ * pentru fiecare valoare dintr-o colectie. 
+ */
+
+const numbers2 = [22, 11, 91, 7, 33];
+
+let min = numbers2[0];
+
+for (const num of numbers2) {
+    if(num < min) {
+        min = num;
+
+    }
+}
+
+console.log(`Cel mai mic numar din array numbers2 este: `, min);
+
+/** For in- Este o structura de control repetitiva conceputa 
+ * special pentru a parcurge proprietatile unui obiect. 
+ * Executa un bloc de cod pentru fiecare proprietate.
+ */
+
+const myCar = {
+    brand: "Volvo",
+    model: "XC90",
+    manufacterYear: 2012
+};
+
+for (const property in myCar) {
+    console.log(`${property} are valoarea ${myCar[property]}`);
+
+}
+
+/**Break- Instructiunea break este utilizata pentru a intrerupe executia unei bucle sau 
+ * a unei instructiuni de switch atunci cand o anumita conditie este indeplinita.                                                        
+ */
+
+const numbers3 = [1, 2, 3, 4, 5, 6];
+// const searchedNumber =numbers3.indexOf[2];
+// console.log(searchedNumber);
+
+const numberToFind = 3;
+let isNumberInArray = false;
+
+for (const num of numbers3) {
+    console.log(num);
+    if(numberToFind === num) {
+        isNumberInArray = true;
+        break;
+    }
+}
+
+console.log(`${numberToFind} este in array: ${isNumberInArray}`);
+
+/** Continue - Instructiunea continue este folosita pentru a sari la urmatoarea iteratie a unei bucle, 
+ * ignorand restul codului din blocul de bucla pentru iteratia curenta.                                                        
+ */
+
+for (const num of numbers3) {
+    if( num % 2 > 0) {
+        continue;
+    }
+    console.log(`Numarul ${num} este par, iar dublul lui este ${num * 2}`);
+
+}
 
 
 
 
 
- 
+
+
+
